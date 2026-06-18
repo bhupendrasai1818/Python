@@ -30,13 +30,14 @@ flowchart TD
 a = int(input("Enter First Number: "))
 b = int(input("Enter Second Number: "))
 
-# Swapping values
 a, b = b, a
 
 print("After Swapping:")
 print("A =", a)
 print("B =", b)
+
 5. Sample Input/Output
+
 Input
 Enter First Number: 10
 Enter Second Number: 20
