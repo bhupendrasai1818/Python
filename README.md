@@ -8,7 +8,7 @@ This repository consits of tutorial tasks related to Python Programming and Prob
 
 |Task Name | Contributor | Code | Documentation |
 |----------|-------------|------|---------------|
-|Task 1 - Hello World Program|Bhupendra    | [link](Unit1\Task1\helloWorld.py) | [link](Unit1\Task1\Task1.md)|
+|Task 1 - Hello World Program|Bhupendra    | [link](Unit1/Task1/helloWorld.py) | [link](Unit1/Task1/Task1.md)|
 |Task 2    |             |      |               |
 
 ### Unit 2 -
