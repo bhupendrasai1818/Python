@@ -21,8 +21,6 @@ Develop a Python application to manage electricity, water, gas, and internet bil
 
 ## 3. Flowchart
 
-### Mermaid Flowchart Code (.md)
-
 ```mermaid
 flowchart TD
     A([Start])
