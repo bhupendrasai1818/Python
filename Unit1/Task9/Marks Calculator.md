@@ -20,8 +20,6 @@ Write a Python program to calculate the total marks obtained by a student in fiv
 
 ## 3. Flowchart
 
-### Mermaid Flowchart Code (.md)
-
 ```mermaid
 flowchart TD
     A([Start])
@@ -66,8 +64,11 @@ Enter Marks of Subject 4: 88
 Enter Marks of Subject 5: 92
 ```
 
-### Output
+### Output Screenshot
 
 ```text
 Total Marks = 433
 ``
+
+### Output Screenshot
+<img width="935" height="640" alt="Screenshot 2026-06-21 193256" src="https://github.com/user-attachments/assets/41bf4264-62a2-4ab3-825f-5955417263f4" />
