@@ -85,6 +85,6 @@ Average Expenditure: 1500.0
 
 ## Screenshot
 
-![Program Output](c:\Users\acer\OneDrive\Pictures\Screenshots\TASK51.png)
+![Program Output](TASK51.png)
 
-> Run the program and save the output screenshot as `screenshot.png` in the repository folder.
+> Run the program and save the output screenshot as `TASK51.png` in the repository folder.
