@@ -20,8 +20,6 @@ Develop a Python application to assist users in estimating taxable income and ta
 
 ## 3. Flowchart
 
-### Mermaid Flowchart Code (.md)
-
 ```mermaid
 flowchart TD
     A([Start])
