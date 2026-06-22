@@ -85,6 +85,6 @@ Average Expenditure: 1500.0
 
 ## Screenshot
 
-![Program Output](TASK51.png)
+![Program Output](![alt text](image.png))
 
 > Run the program and save the output screenshot as `TASK51.png` in the repository folder.

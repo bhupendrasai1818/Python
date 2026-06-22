@@ -78,3 +78,4 @@ Enter Internet Charges: 100
 Customer Name: Bhuvaneswari
 Total Bill Amount: Rs. 549.0
 ```
+![alt text](image.png)
