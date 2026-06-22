@@ -19,7 +19,7 @@ Write a Python program to calculate the percentage of marks obtained in an exami
 
 ## 3. Flowchart
 
-### Mermaid Flowchart Code (.md)
+### Mrmaid Flowchart Code (.md)
 
 ```mermaid
 flowchart TD
