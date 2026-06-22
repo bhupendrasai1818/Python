@@ -19,7 +19,6 @@ Write a Python program to calculate the income tax payable based on annual incom
 
 ## 3. Flowchart
 
-### Mermaid Flowchart Code (.md)
 
 ```mermaid
 flowchart TD
