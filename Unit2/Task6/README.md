@@ -39,8 +39,22 @@ Examples:
 
 ## 3. Flowchart
 
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Enter Number num/]
+    B --> C{num < 0?}
 
+    C -->|Yes| D[Display "Factorial not defined"]
+    D --> H([Stop])
 
+    C -->|No| E[Initialize factorial = 1]
+    E --> F[For i = 1 to num]
+    F --> G[factorial = factorial * i]
+    G --> F
+
+    F --> I[Display Factorial]
+    I --> H
+```
 
 ## 4. Python Source Code
 
