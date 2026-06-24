@@ -5,40 +5,37 @@ Develop a Python program that performs arithmetic operations using separate func
 
 ## 2. Algorithm
 
-Step 1: Start the program.
-Step 2: Define separate functions for addition, subtraction, multiplication, and division.
-Step 3: Accept two numbers from the user.
-Step 4: Display the operation menu.
-Step 5: Accept the user's choice.
-Step 6: Call the corresponding function based on the choice.
-Step 7: Display the calculated result.
-Step 8: Stop the program.
+1. Start the program.
+2. Define separate functions for addition, 
+   subtraction, multiplication, and division.
+3. Accept two numbers from the user.
+4. Display the operation menu.
+5. Accept the user's choice.
+6. Call the corresponding function based on the choice.
+7. Display the calculated result.
+8. Stop the program.
 
 ## 3. Flowchart
 
-             START
-               |
-               v
-       Enter two numbers
-               |
-               v
-        Display menu
-               |
-               v
-        Enter choice
-               |
-     -------------------
-     |    |     |      |
-     v    v     v      v
-   Add  Sub  Mul    Div
-     |    |     |      |
-     -------------------
-               |
-               v
-        Display result
-               |
-               v
-              END
+```mermaid
+flowchart TD
+    A([START]) --> B[/Enter two numbers/]
+    B --> C[Display menu]
+    C --> D[/Enter choice/]
+    D --> E{Select Operation}
+    
+    E -->|Add| F[Perform Addition]
+    E -->|Sub| G[Perform Subtraction]
+    E -->|Mul| H[Perform Multiplication]
+    E -->|Div| I[Perform Division]
+    
+    F --> J[/Display result/]
+    G --> J
+    H --> J
+    I --> J
+    
+    J --> K([END])
+```
 
 ## 4. Source Code
 
