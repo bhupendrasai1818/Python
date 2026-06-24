@@ -5,31 +5,23 @@ Develop a Python program that demonstrates the creation and invocation of user-d
 
 ## 2. Algorithm
 
-Step 1: Start the program.
-Step 2: Define a function with required statements.
-Step 3: Call the function.
-Step 4: Execute the function body.
-Step 5: Display the result.
-Step 6: Stop.
+1. Start the program.
+2. Define a function with required statements.
+3. Call the function.
+4. Execute the function body.
+5. Display the result.
+6. Stop.
 
 ## 3. Flowchart
 
-        START
-          |
-          v
- Define Function
-          |
-          v
- Call Function
-          |
-          v
- Execute Function
-          |
-          v
- Display Output
-          |
-          v
-         END
+```mermaid
+       flowchart TD
+    A([START]) --> B[Define Function]
+    B --> C[Call Function]
+    C --> D[Execute Function]
+    D --> E[/Display Output/]
+    E --> F([END])
+```    
 
 ## 4. Source Code
 
