@@ -1,40 +1,66 @@
-print("===== RETAIL BILLING SYSTEM =====")
-
-n = int(input("Enter number of products: "))
+import tkinter as tk
 
 subtotal = 0
-items = []
 
-for i in range(n):
-    print(f"\nProduct {i+1}")
-    name = input("Enter product name: ")
-    qty = int(input("Enter quantity: "))
-    price = float(input("Enter price per unit: "))
+def add_item():
+    global subtotal
+
+    name = product.get()
+    qty = int(quantity.get())
+    price = float(price_entry.get())
 
     total = qty * price
     subtotal += total
 
-    items.append([name, qty, price, total])
+    items.insert(tk.END, f"{name} - {qty} x {price} = ₹{total}")
 
-if subtotal > 5000:
-    discount = subtotal * 0.10
-else:
-    discount = 0
+    product.delete(0, tk.END)
+    quantity.delete(0, tk.END)
+    price_entry.delete(0, tk.END)
 
-taxable_amount = subtotal - discount
-gst = taxable_amount * 0.18
-final_amount = taxable_amount + gst
+def generate_bill():
+    discount = subtotal * 0.10 if subtotal > 5000 else 0
+    gst = (subtotal - discount) * 0.18
+    final = subtotal - discount + gst
 
-print("\n========== INVOICE ==========")
-print("{:<15} {:<10} {:<10} {:<10}".format(
-    "Product", "Qty", "Price", "Total"))
+    result.config(
+        text=f"""
+Subtotal : ₹{subtotal:.2f}
+Discount : ₹{discount:.2f}
+GST : ₹{gst:.2f}
+Final Amount : ₹{final:.2f}
+"""
+    )
 
-for item in items:
-    print("{:<15} {:<10} {:<10} {:<10}".format(
-        item[0], item[1], item[2], item[3]))
+root = tk.Tk()
+root.title("Retail Billing System")
+root.geometry("500x500")
 
-print("\nSubtotal      : ₹", subtotal)
-print("Discount      : ₹", discount)
-print("GST (18%)     : ₹", gst)
-print("Final Amount  : ₹", final_amount)
-print("=============================")
+tk.Label(root, text="Retail Billing System",
+         font=("Arial", 16, "bold")).pack()
+
+tk.Label(root, text="Product Name").pack()
+product = tk.Entry(root)
+product.pack()
+
+tk.Label(root, text="Quantity").pack()
+quantity = tk.Entry(root)
+quantity.pack()
+
+tk.Label(root, text="Price").pack()
+price_entry = tk.Entry(root)
+price_entry.pack()
+
+tk.Button(root, text="Add Item",
+          command=add_item).pack(pady=10)
+
+items = tk.Listbox(root, width=50)
+items.pack()
+
+tk.Button(root, text="Generate Bill",
+          command=generate_bill).pack(pady=10)
+
+result = tk.Label(root, text="")
+result.pack()
+
+root.mainloop()
