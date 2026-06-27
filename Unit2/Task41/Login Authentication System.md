@@ -106,13 +106,5 @@ Login Successful
 Access Granted
 ```
 
-### Screenshot 2: Failed Login
 
-```text
-Enter Username: user
-Enter Password: 1111
-
-Invalid Username or Password
-Access Denied
-```
 
